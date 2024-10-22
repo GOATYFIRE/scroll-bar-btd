@@ -1,0 +1,275 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+
+body {
+    background: black;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+    );
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+.item {
+    border: 2px solid orangered;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 200px;
+    height: 100px;
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -10s;
+}
+
+.item1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+    background-image:  url(banana.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.item2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(wizard.png);
+}
+
+.item3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-image: url(obyn.png);
+}
+
+.item4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(ninja.png);
+}
+
+.item5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(druid.png);
+}
+
+.item6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(download.png);
+}
+
+.item7{
+     animation-delay: calc(30s / 8 * (8 - 7) * -1);
+     background-position: center;
+     background-size: 50%;
+     background-repeat: no-repeat;
+     background-image: url(download\ \(1\).png);
+}
+
+.item8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+    background-image: url(buck.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.-item1 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+    background-image:  url(banana.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    filter: invert(100);
+}
+
+.-item2 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(wizard.png);
+    filter: invert(100);
+}
+
+.-item3 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-image: url(obyn.png);
+    filter: invert(100);
+}
+
+.-item4 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(ninja.png);
+    filter: invert(100);
+}
+
+.-item5 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(druid.png);
+    filter: invert(100);
+}
+
+.-item6 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(download.png);
+    filter: invert(100);
+}
+
+.-item7{
+     animation-delay: calc(30s / 8 * (8 - 4) * -1);
+     background-position: center;
+     background-size: 50%;
+     background-repeat: no-repeat;
+     background-image: url(download\ \(1\).png);
+    filter: invert(100);
+}
+
+.-item8 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+    background-image: url(buck.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    filter: invert(100);
+}
+
+
+
+
+
+
+.fitem1 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+    background-image: url(ninja.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    filter: contrast(700);
+}
+
+.fitem2 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+    background-image: url(download.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    filter: contrast(700);
+}
+
+.fitem3 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+    background-image: url(download\ \(1\).png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    filter: contrast(700);
+}
+
+.fitem4 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+    background-image: url(obyn.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    filter: contrast(700);
+}
+
+.fitem5 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+    background-image: url(wizard.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    filter: contrast(700);
+}
+
+.fitem6 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+    background-image: url(banana.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    filter: contrast(700);
+}
+
+.fitem7{
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+    background-image: url(druid.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    filter: contrast(700);
+}
+
+.fitem8 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+    background-image: url(buck.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    filter: contrast(700);
+}
+
+
+
